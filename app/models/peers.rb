@@ -1,5 +1,15 @@
 module Tracker
   class Peer
-    attr_reader :id
+    extend Forwardable
+
+    def_delegators :@storage, :external_peer_id, :id
+
+    def initialize(storage = PeerStorage.new)
+      @storage = storage
+    end
+
+    def storage_instance
+      @storage
+    end
   end
 end

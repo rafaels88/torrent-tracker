@@ -2,6 +2,6 @@ module Tracker
   class PeerStorage
     include Mongoid::Document
 
-    field :id, type: String
+    field :external_peer_id, type: String
   end
 end
