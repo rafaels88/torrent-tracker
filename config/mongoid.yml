@@ -1,6 +1,13 @@
 development:
   sessions:
     default:
-      database: utorrent_tracker
+      database: utorrent_tracker_development
+      hosts:
+        - localhost: 27017
+
+test:
+  sessions:
+    default:
+      database: utorrent_tracker_test
       hosts:
         - localhost: 27017

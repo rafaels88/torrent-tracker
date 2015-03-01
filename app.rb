@@ -1,6 +1,7 @@
 # encoding: utf-8
 require 'sinatra/base'
 require 'mongoid'
+require 'forwardable'
 
 require_relative './app/routes/announce'
 
