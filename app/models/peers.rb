@@ -21,7 +21,7 @@ module Tracker
     private
 
     def filter_permitted_update_attributes(attrs)
-      permitted_attrs = [:downloaded]
+      permitted_attrs = [:downloaded, :uploaded, :left]
       attrs.select { |k, v| permitted_attrs.include? k }
     end
   end
