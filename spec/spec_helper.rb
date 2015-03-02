@@ -10,6 +10,7 @@ dirs_to_require = [
   File.join('app', 'routes'),
   File.join('app', 'storages'),
   File.join('app', 'repositories'),
+  File.join('app', 'use_cases'),
 ]
 
 dirs_to_require.each do |dir_to_require|
